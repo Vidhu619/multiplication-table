@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Calculator</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+<label> Enter a number:</label>
+    <input type="text" id="num" /><br /><br />
+   
+    <input type="button" value="Find" onClick="multiply()" />
+    <p id="result"></p>
+    <script>
+        function multiply() {
+            var n = document.getElementById('num').value;
+           
+            var ans ="";
+            for (i = 1; i <=10; i++) {
+                ans += i + " * " + n + " = " + i * n + "<br/>";
+            }
+            document.getElementById("result").innerHTML = ans;
+        }
+    </script>
+</body>
+</html>
